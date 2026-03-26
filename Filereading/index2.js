@@ -1,6 +1,7 @@
 const fs=require('fs');
 
 fs.readFile('fl1.txt','utf-8',(err,data)=>{
+    if(err) return console.log('ERROR');
     fs.readFile(`${data}.txt`,'utf-8',(err,data1)=>{
         console.log(data1);
         fs.readFile('fl3.txt','utf-8',(err,data2)=>{
