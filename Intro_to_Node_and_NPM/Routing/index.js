@@ -15,7 +15,7 @@ const server = http.createServer((req,res)=>{
             'content-type':'text/html',
             'my-own-header':'koi baat nahi chalta hai'
         });
-        res.end('<h1>Hello Schrodinger at but no one found</h1>');
+        res.end('<h1>Hello Schrodinger at but no one found at support</h1>');
     }
     
 });
