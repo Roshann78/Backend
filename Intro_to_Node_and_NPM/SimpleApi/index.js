@@ -14,15 +14,14 @@ const server=http.createServer((req,res)=>{
     else if(pathName==='/realname'){
         res.writeHead(200,{
             'content-type':'text/html',
-            'my-own-header':'koi baat nahi chalta hai dunya hai'
         });
         res.end('<h1>My real name is Schrodinger</h1>');
     }
-    else if(pathname==='/detailsapi'){
+    else if(pathName==='/detailsapi'){
         res.writeHead(200,{
-            'content-type':'',
-            'my-own-header':'koi baat nahi chalta hai dunya hai'
+            'content-type':'application/json',
         });
+        res.end(data);
     }
     else{
         res.writeHead(404,{
