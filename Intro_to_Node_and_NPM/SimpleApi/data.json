@@ -1,0 +1,57 @@
+[
+  {
+    "id": 0,
+    "name": "Schrodinger",
+    "image": "🐱",
+    "from": "Austria",
+    "hobby": "Quantum Experiments",
+    "age": "35",
+    "height": "175 cm",
+    "male": true,
+    "description": "A mysterious physicist who is both working and not working at the same time until observed. Known for deep thinking and paradoxical ideas."
+  },
+  {
+    "id": 1,
+    "name": "Roshan",
+    "image": "🧑‍💻",
+    "from": "India",
+    "hobby": "Competitive Programming",
+    "age": "21",
+    "height": "172 cm",
+    "male": true,
+    "description": "Enjoys solving complex algorithmic problems and building efficient solutions. Passionate about coding contests and system design."
+  },
+  {
+    "id": 2,
+    "name": "Aarav",
+    "image": "⚽",
+    "from": "India",
+    "hobby": "Football",
+    "age": "19",
+    "height": "178 cm",
+    "male": true,
+    "description": "An energetic football enthusiast who loves playing as a striker. Dreams of representing his country someday."
+  },
+  {
+    "id": 3,
+    "name": "Emma",
+    "image": "🎨",
+    "from": "France",
+    "hobby": "Painting",
+    "age": "22",
+    "height": "165 cm",
+    "male": false,
+    "description": "A creative artist who expresses emotions through vibrant paintings. Loves exploring abstract and modern art styles."
+  },
+  {
+    "id": 4,
+    "name": "Liam",
+    "image": "🎸",
+    "from": "Germany",
+    "hobby": "Music",
+    "age": "24",
+    "height": "180 cm",
+    "male": true,
+    "description": "A passionate guitarist who enjoys composing music and performing live. Inspired by classic rock and modern indie bands."
+  }
+]
