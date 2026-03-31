@@ -9,7 +9,7 @@ const dataObj=JSON.parse(data);
 const server=http.createServer((req,res)=>{
     const pathName=req.url;
     if(pathName==='/' || pathName==='/overview'){
-        res.end('WELCOME TO SCHRODINGERS DEN');
+        res.end('WELCOME TO SCHRODINGERS DEN HAHA');
     }
     else if(pathName==='/realname'){
         res.writeHead(200,{
