@@ -86,6 +86,7 @@
         padding: 1.5rem 6rem 0.5rem 1.5rem;
         letter-spacing: -4rem;
         transform: skewX(20deg);
+        white-space: nowrap;
       }
 
       .card__title-box {
@@ -97,11 +98,13 @@
       }
 
       .card__title {
-        font-family: 'Megrim', sans-serif;
-        color: white;
-        font-size: 3.25rem;
-        transform: skewX(20deg);
-      }
+  font-family: 'Megrim', sans-serif;
+  color: white;
+  font-size: 3.25rem;
+  transform: skewX(20deg);
+
+  white-space: nowrap;   /* 🔥 THIS fixes your issue */
+}
 
       .card__details {
         display: flex;
