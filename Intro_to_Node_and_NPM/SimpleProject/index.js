@@ -10,6 +10,7 @@ const replaceTemplate=(temp,product)=>{
     output=output.replace(/{%FROM%}/g,product.from);
     output=output.replace(/{%QUANTITY%}/g,product.quantity);
     output=output.replace(/{%DESCRIPTION%}/g,product.description);
+    output=output.replace(/{%NUTRIENT%}/g,product.nutrients);
     output=output.replace(/{%ID%}/g,product.id);
     if (!product.organic) {
         output = output.replace(/{%NOT_ORGANIC%}/g, 'not-organic');
@@ -28,9 +29,10 @@ const data=fs.readFileSync('data.json','utf-8');
 const dataObj=JSON.parse(data);
 
 const server=http.createServer((req,res)=>{
-    const pathName=req.url;
+    const {query,pathname}=url.parse(req.url,true);
+    // const pathName=req.url;
     //overview page
-    if(pathName==='/' || pathName==='/overview'){
+    if(pathname==='/' || pathname==='/overview'){
         res.writeHead(200,{
             'content-type':'text/html',
         });
@@ -42,14 +44,17 @@ const server=http.createServer((req,res)=>{
         res.end(output);
     }
     //product page
-    else if(pathName==='/product'){
+    else if(pathname==='/product'){
+        // console.log(query);
+        const product=dataObj[query.id];
+        const output=replaceTemplate(tempProduct,product);
         res.writeHead(200,{
             'content-type':'text/html',
         });
-        res.end('<h1>My real name is Schrodinger</h1>');
+        res.end(output);
     }
     //api
-    else if(pathName==='/detailsapi'){
+    else if(pathname==='/detailsapi'){
         res.writeHead(200,{
             'content-type':'application/json',
         });
