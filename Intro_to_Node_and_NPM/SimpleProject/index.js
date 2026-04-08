@@ -25,6 +25,7 @@ const tempCard=fs.readFileSync('template-card.html','utf-8');
 const tempProduct=fs.readFileSync('products.html','utf-8');
 
 
+
 const data=fs.readFileSync('data.json','utf-8');
 const dataObj=JSON.parse(data);
 
