@@ -20,6 +20,7 @@ const replaceTemplate=(temp,product)=>{
     return output;
 }
 
+
 const tempOverview=fs.readFileSync('overview.html','utf-8');
 const tempCard=fs.readFileSync('template-card.html','utf-8');
 const tempProduct=fs.readFileSync('products.html','utf-8');
